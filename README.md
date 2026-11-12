@@ -93,8 +93,7 @@ Both datasets were then aggregated per customer and **merged into 1,938 customer
 - **Features:** `yearly_income`, `total_debt`, `credit_score`, `credit_limit`, `dti_ratio`
 - **Why K-Means instead of RFM:** K-Means can use more variables than RFM's 3, giving richer segments
 - **Scaling:** RobustScaler, because the features contain many outliers
-- **Choosing K:** Elbow Method and Silhouette Method → **K = 3** (silhouette score relatively stable compared to K ≥ 4)
-
+- **Choosing K:** Elbow Method and Silhouette Method → **K = 3**, a safe choice that gives clearly distinct, actionable segments while keeping a relatively stable silhouette score compared to K ≥ 4
 | Elbow Method | Silhouette (K = 3) |
 |---|---|
 | ![Elbow](images/06_elbow_method.png) | ![Silhouette](images/07_silhouette_k3.png) |
